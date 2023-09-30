@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>excel-clone</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./menus.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <div id="options">
+        <div class="menus">
+            <div id="bold" onclick="onClickBold(this)">B</div>
+            <!-- by passing "this" means we are sending the whole button refrence -->
+            <div id="italic" onclick="onClickitalic(this)">I</div>
+            <div id="underlined" onclick="onClickUnderline(this)">U</div>
+            <div class="material-icons active-option textAlign" data-value="left" onclick="onClickTextAlign(this)">format_align_left</div>
+            <div class="material-icons textAlign" data-value="right" onclick="onClickTextAlign(this)">format_align_right</div>
+            <div class="material-icons textAlign" data-value="center" onclick="onClickTextAlign(this)">format_align_center</div>
+            <div id="text-color">
+                <label for ="color-picker"><span class="material-icons">format_color_text</span><label>
+                <input type="color" id="color-picker" onchange="onChangeTextColor(this)" style="width:0;height:0"/>
+            </div>
+            <div id="bgcolor-picker">
+                <label for ="bgcolor-picker"><span class="material-icons">format_color_fill</span></label>
+                <input type="color" id="bgcolor-picker" onchange="onChangeBackgroundColor(this)" style="width:0;height:0"/>
+            </div>
+        </div>
+          <span id="active-cell">null</span> 
+    </div>
+    <main style="position:relative;"> 
+        <div id="header">
+        <b>S.NO</b>
+     </div>
+     <section id="body">
+         <!-- <div class="row" style="overflow-y: scroll;">
+             one bold and 26 div element -->
+         <!-- </div> -->
+     </section>
+    </main>   
+    <script src="./options.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
