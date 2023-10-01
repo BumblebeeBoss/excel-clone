@@ -1,24 +1,44 @@
-
-.menus{
+/* .menus {
     display: flex;
-    gap:20px;
-    /* padding:10px 30px; */
     justify-content: center;
+    gap: 20px;
     align-items: center;
-}
-.menus>div{
-    padding:10px;
+  }
+  
+  .active-option {
+    background-color: #d0d8e0;
+  }
+  
+  .menus > div {
+    padding: 10px;
     cursor: pointer;
     transition: 0.5s;
-    border-radius: 4px;
-}
-.menus>div:hover{
-    background-color:#d0d8c0;
+    border-radius: 4pxß;
+  }
+  .menus > div:hover {
+    background-color: #d0d8e0aa;
+  } */
 
-}
-.active-option{
-    background-color:#d0d8c0;
-    /* cursor: pointer; */
-}
 
-   
+
+
+.menus {
+  display: flex;
+  gap: 20px;
+  padding: 10px 30px;
+  justify-content: center;
+  align-items: center;
+}
+.menus > div {
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 4px;
+}
+.menus > div:hover {
+  background-color: #d0d8c0;
+}
+.active-option {
+  background-color: #d0d8c0;
+  cursor: pointer;
+}
